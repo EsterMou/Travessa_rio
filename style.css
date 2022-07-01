@@ -1,0 +1,17 @@
+.margem_A{
+    background-color: aliceblue;
+    width: 400px;
+    height: 300px;
+    border: 25px solid;
+    margin: 25px;
+}
+
+.canoa{
+    background-color: aliceblue;
+    width: 200px;
+    height: 300px;
+    border: 25px solid;
+    margin: 0 auto;
+    margin-top: 5px;
+    
+} 
