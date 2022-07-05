@@ -2,7 +2,7 @@
     background-color: aliceblue;
     width: 400px;
     height: 300px;
-    border: 25px solid;
+    border: 5px solid;
     margin: 25px;
 }
 
@@ -10,8 +10,14 @@
     background-color: aliceblue;
     width: 200px;
     height: 300px;
-    border: 25px solid;
-    margin: 0 auto;
-    margin-top: 5px;
-    
+    border: 5px solid;    
 } 
+
+
+.margem_b{
+    background-color: aliceblue;
+    width: 400px;
+    height: 300px;
+    border: 5px solid;
+    margin: 25px;
+}
