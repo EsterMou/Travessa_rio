@@ -27,6 +27,18 @@
     border: 5px solid;
     margin: 25px;
 }
+
+.container button{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#embarcar, #atravessar, #desembarcar{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
 h2, h3 {
     text-align: center;
     color: black;
