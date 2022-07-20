@@ -7,40 +7,28 @@
 
 .margem_A{
     background-color: aliceblue;
-    width: 500px;
-    height: 400px;
+    width: 525px;
+    height: 425px;
     border: 5px solid;
     margin: 25px;
 }
 
 .canoa{
     background-color: aliceblue;
-    width: 300px;
-    height: 400px;
+    width: 325px;
+    height: 425px;
     border: 5px solid;    
 } 
 
 
 .margem_b{
     background-color: aliceblue;
-    width: 500px;
-    height: 400px;
+    width: 525px;
+    height: 425px;
     border: 5px solid;
     margin: 25px;
 }
-
-.container button{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
-#embarcar, #atravessar, #desembarcar{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-h2, h3 {
+h1, h2, h3 {
     text-align: center;
     color: black;
 }
@@ -54,3 +42,7 @@ button {
     display: inline-block;
     font-size: 15px;
 }
+.minuto{
+    margin-left: 1200px;
+}
+

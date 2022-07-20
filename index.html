@@ -6,12 +6,12 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h2>Travessia de Rio</h2>
+        <h1>Travessia de Rio</h1>
         <form name="form_cronometro">
-            <div>
-                <span id="hora">00</span>:<span id="minuto">00</span>:<span id="segundo">00</span>
-                <button type="button" onclick="iniciar()">Iniciar</button>
-                <button type="button" onclick="reiniciar()">Reiniciar</button>
+            <div class="cronometro">
+                <span class="minuto">00</span>:<span class="segundo">00</span>:<span class="milisegundo">00</span>
+                <button class="iniciar" onclick="iniciar()">Iniciar</button>
+                <button class="reiniciar" onclick="resetar()">Reiniciar</button>
             </div>
         </form>
 
@@ -20,29 +20,37 @@
                 <h2>MARGEM A</h2>
                 <h3>---------------Selecione uma pessoa-------------------</h3>
                 <br>
-                <img id="mae" src="imagens/mae.png">
-                <img id="pai" src="imagens/pai.png">
-                <img id="filha1" src="imagens/filha1.png">
-                <img id="filha2" src="imagens/filha2.png">
-                <img id="filho1" src="imagens/filho1.png">
-                <img id="filho2" src="imagens/filho2.png">
-                <img id="policial" src="imagens/policial.png">
-                <img id="prisioneiro" src="imagens/prisioneiro.png">
+                <div class="imagens">
+                    <img id="mae" src="imagens/mae.png">
+                    <img id="pai" src="imagens/pai.png">
+                    <img id="filha1" src="imagens/filha1.png">
+                    <img id="filha2" src="imagens/filha2.png">
+                    <img id="filho1" src="imagens/filho1.png">
+                    <img id="filho2" src="imagens/filho2.png">
+                    <img id="policial" src="imagens/policial.png">
+                    <img id="prisioneiro" src="imagens/prisioneiro.png">
+                </div>
                 <br>
-                <button id="embarcar">Embarcar</button>
+                <button class="Embarcar" type="button">Embarcar</button>
             </div>
             
             <div class="canoa">
                 <h2>CANOA</h2>
                 <h3>-------Passageiros--------</h3>
-                <button class="atravessar">Atravessar</button>
+                <div class="imagem_canoa">
+
+                </div>
                 <br>
+                <button class="atravessar">Atravessar</button>
                 <button class="desembarcar">Desembarcar</button>
             </div>
 
             <div class="margem_b">
                 <h2>MARGEM B</h2>
                 <h3>---------------Selecione uma pessoa-------------------</h3>
+                <div class="imagens_magemB">
+
+                </div>
                 <button class="embarcar">Embarcar</button>
             </div>
         </div>
