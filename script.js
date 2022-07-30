@@ -38,3 +38,5 @@ reset.onclick = function(){
     minutes = 0
     hours = 0
 }
+
+let margemA = ["mae", "pai", "filha1", "filha2", "filho1", "filho2", "policial", "prisioneiro"]
