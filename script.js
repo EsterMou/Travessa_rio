@@ -1,27 +1,40 @@
-const seg = document.querySelector('.segundo')
-const min = document.querySelector('.minuto')
-const miliseg = document.querySelector('.milisegundo')
+let h3 = document.getElementsByTagName('h3')[0]
+let play = document.getElementById('iniciar')
+let reset = document.getElementById('reiniciar')
 
-let miliNum = 0
-let segNum = 0
-let minNum = 0
-let INTERVALO
+let sec = 0
+let min = 0
+let hrs = 0
+let t 
 
-function milissegundo(){
-    miliNum++
-    miliseg.innerHTML = miliNum
+function tick() {
+    sec++;
+    if(sec >= 60){
+        sec = 0
+        min++
+        if(min >= 60){
+            min = 0
+            hrs++
+        }
+    }
 }
-function segundos(){
-    segNum++
-    seg.innerHTML = segNum
+
+function add(){
+    tick();
+    h3.textContent = (hrs > 9 ? hrs : "0" + hrs) + ":" + (min > 9 ? min : "0" + min) + ":" + (sec > 9 ? sec : "0" + sec)
+    timer();
 }
-function minutos(){
-    minNum++
-    min.innerHTML = minNum
+
+function timer(){
+    t = setTimeout(add, 1000)
 }
-function iniciar(){
-    clearInterval(INTERVALO)
-    INTERVALO = setInterval(() => {
-        milissegundo()
-    }, 10)
+
+timer();
+play.onclick = timer
+
+reset.onclick = function(){
+    h3.textContent = "00:00:00"
+    seconds = 0
+    minutes = 0
+    hours = 0
 }

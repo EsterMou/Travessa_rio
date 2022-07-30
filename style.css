@@ -42,7 +42,7 @@ button {
     display: inline-block;
     font-size: 15px;
 }
-.minuto{
-    margin-left: 1200px;
+.cronometro{
+    align-items: center;
+    text-align: center;
 }
-
